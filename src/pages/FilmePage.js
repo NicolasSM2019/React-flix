@@ -10,7 +10,7 @@ import Carrossel from "../Components/Carrossel";
 import filmeService from "../Services/FilmesService";
 import { useParams } from "react-router-dom";
 import NotFound from "./NotFound";
-import NaveBar from "../Components/NavBar";
+import NavBar from "../Components/NavBar";
 
 
 function FilmePage() {
@@ -24,7 +24,7 @@ function FilmePage() {
     return (
         <div className="Filme">
             <div className="Navbar">
-                <NaveBar/>
+                <NavBar/>
             </div>
             <div className="PaidetodosFilme">
                 <div className="divFilmeBanner">

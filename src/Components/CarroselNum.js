@@ -5,9 +5,9 @@ function CarroselNum({ listaNumerada }) {
 
     let i = 1;
 
-    const catalogoNumerado = listaNumerada.map(num =>
+    const catalogoNumerado = listaNumerada.map((num, idx) =>
 
-        <div className='conjuntoNum'>
+        <div className='conjuntoNum' key={idx}>
             <span className='numero'>{i++}</span>
             <img src={num.fotoThumbnail} className="fotoNum" />
         </div>

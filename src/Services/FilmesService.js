@@ -6,6 +6,10 @@ class FilmesService {
         this.todosFilmes = [...filmes, ...filmes2, ...filmesNum];
     }
 
+    getAll() {
+        return this.todosFilmes;
+    }
+
     getById(id) {
         return this.todosFilmes.find(filme => filme.id === id) || null;
     }

@@ -4,7 +4,7 @@ function FilmeBanner ({filme}){
 
     return(
         <div className='Banner'>
-            <img src={filme.fotoThumbnail} class="BannerImg"/>
+            <img src={filme.fotoThumbnail} className="BannerImg"/>
         </div>
 
     )

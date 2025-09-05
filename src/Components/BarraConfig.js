@@ -12,7 +12,7 @@ function BarraConfig() {
 
             <div className="navegueconfig">
 
-                <img src={logo} class="imagem"></img>
+                <img src={logo} className="imagem"></img>
 
                 <div className="so">
                     <img src={perfil} className="perfil"></img>

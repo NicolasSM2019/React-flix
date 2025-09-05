@@ -3,13 +3,10 @@ import cabana from '../Imagens/cabana.jpg'
 
 import NavBar from '../Components/NavBar';
 import filmesService from '../Services/FilmesService';
-import { Link, useParams } from 'react-router-dom';
 
 function CatalogoPage() {
 
-    const {filtro} = useParams();
-
-    console.log(filtro);
+    const filme = filmesService.getRandomFilme();
 
     const filmeList = filmesService.getAll();
 
@@ -24,12 +21,10 @@ function CatalogoPage() {
 
                 {
                     filmeList.map((filme, idx) => 
-                        <div key={idx} className='container-filme'>
+                        <div className='container' key={idx}>
                             <h3>{filme.titulo}</h3>
                             <div className='img-container'>
-                                <Link to={`/filme/${filme.id}`}>
-                                    <img src={filme.fotoThumbnail} className='foto' alt={filme.titulo} />
-                                </Link>
+                                <img src={filme.fotoThumbnail} className='foto' alt={filme.titulo} />
                             </div>
                             <div className='introducao'>
                                 {filme.sinopse}

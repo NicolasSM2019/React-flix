@@ -15,6 +15,7 @@ function MainRoutes() {
             <Route path="/filme" element={<FilmePage />} />
             <Route path="/filme/:id" element={<FilmePage />} /> 
             <Route path="/catalogo" element={<CatalogoPage />} /> {/* rota adicionada */}
+            <Route path="/catalogo/:filtro" element={<CatalogoPage />} /> {/* rota adicionada */}
             <Route path="/login" element={<LoginPage />} />
         </Routes>
     );

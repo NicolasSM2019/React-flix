@@ -228,6 +228,7 @@ export const filmesNum = [
     numero_comentarios: 5400,
     faixa_etaria: "12+",
     indicacoes_premios: ["Emmy"],
+        sinopse: ""
   },
   {
     id: 17,
@@ -241,6 +242,7 @@ export const filmesNum = [
     numero_comentarios: 8600,
     faixa_etaria: "14+",
     indicacoes_premios: [],
+        sinopse: ""
   },
   {
     id: 18,
@@ -254,6 +256,7 @@ export const filmesNum = [
     numero_comentarios: 9100,
     faixa_etaria: "14+",
     indicacoes_premios: [],
+        sinopse: ""
   },
   {
     id: 19,
@@ -267,6 +270,7 @@ export const filmesNum = [
     numero_comentarios: 3200,
     faixa_etaria: "16+",
     indicacoes_premios: [],
+        sinopse: ""
   },
   {
     id: 20,
@@ -280,6 +284,7 @@ export const filmesNum = [
     numero_comentarios: 14500,
     faixa_etaria: "16+",
     indicacoes_premios: ["Emmy"],
+        sinopse: ""
   },
   {
     id: 21,
@@ -293,6 +298,7 @@ export const filmesNum = [
     numero_comentarios: 2100,
     faixa_etaria: "16+",
     indicacoes_premios: [],
+        sinopse: ""
   },
   {
     id: 22,
@@ -306,5 +312,6 @@ export const filmesNum = [
     numero_comentarios: 12000,
     faixa_etaria: "Livre",
     indicacoes_premios: ["Oscar"],
+        sinopse: ""
   },
 ];

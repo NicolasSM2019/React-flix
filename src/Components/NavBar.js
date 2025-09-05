@@ -3,29 +3,40 @@ import logo from "../Imagens/netflix.png"
 import { FaRegUser } from "react-icons/fa6";
 import {Link} from 'react-router-dom'
 
-function NaveBar (){
+function NavBar (){
 
     return(
 
         <div className="nav-bar">
             <div className="navegue">
                 <Link to="/home">
-                    <img src={logo} class="imagem"></img>
+                    <img src={logo} className="imagem"></img>
                 </Link>
                 <Link to="/home">
-                    <a className="link">Início</a>
+                    <span className="link">Início</span>
                 </Link>
-                <a className="link">Séries</a>
-                <a className="link">Filmes</a>
-                <a className="link">Bombando</a>
-                <a className="link">Minha lista</a>
+
+                 <Link to="/catalogo/series">
+                    <span className="link">Séries</span>
+                </Link>
+
+                <Link to="/catalogo/filmes">
+                    <span className="link">Filmes</span>
+                </Link>
+
+                <Link to="/catalogo/bombando">
+                    <span className="link">Bombando</span>
+                </Link>
+                <Link to="/catalogo/minhalista">
+                    <span className="link">Minha lista</span>
+                </Link>
             </div>
 
             <div className="conta">
                 <FaRegUser />
 
                 <Link to ="/config">
-                    <a className="linkconta">Conta</a>
+                    <span className="linkconta">Conta</span>
                 </Link>
 
             </div>
@@ -34,4 +45,4 @@ function NaveBar (){
     )
 }
 
-export default NaveBar;
+export default NavBar;

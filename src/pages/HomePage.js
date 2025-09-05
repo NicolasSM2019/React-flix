@@ -1,6 +1,6 @@
 import "./HomePage.css";
 
-import NaveBar from "../Components/NavBar";
+import NavBar from "../Components/NavBar";
 import filmeService from "../Services/FilmesService";
 import Carrossel from "../Components/Carrossel";
 import CarroselNum from "../Components/CarroselNum";
@@ -16,7 +16,7 @@ function HomePage(){
         <div className="tela" style={{ backgroundImage: `url(${filmeTopo.fotoThumbnail})` }}>
             
             <div className="casa">
-                <NaveBar />
+                <NavBar />
                 <FilmeDestaque filme={filmeTopo}/>
 
                 <div className="todosFilme">

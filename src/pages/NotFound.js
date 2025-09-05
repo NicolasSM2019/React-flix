@@ -3,7 +3,7 @@ import './NotFound.css';
 
 function NotFound() {
     return (
-        <h1 class="title">Filme não encontrado!</h1>
+        <h1 className="title">Filme não encontrado!</h1>
     )
 }
 
